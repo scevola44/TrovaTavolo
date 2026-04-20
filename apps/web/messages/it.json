@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "Trova Tavolo",
+    "tagline": "Trova il tuo prossimo tavolo di gioco di ruolo."
+  },
+  "nav": {
+    "home": "Home",
+    "bacheca": "Bacheca",
+    "new": "Nuovo annuncio",
+    "account": "Il mio profilo",
+    "login": "Accedi",
+    "signup": "Registrati",
+    "logout": "Esci"
+  },
+  "home": {
+    "heading": "Annunci per giocatori, master e gruppi",
+    "subheading": "Cerchi giocatori? Un master? Un gruppo a cui unirti? Pubblica un annuncio nella tua città.",
+    "cta_browse": "Vai alla bacheca",
+    "cta_post": "Pubblica un annuncio"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "password_hint": "Almeno 8 caratteri.",
+    "signup_heading": "Crea un account",
+    "signup_submit": "Registrati",
+    "signup_already": "Hai già un account?",
+    "login_heading": "Accedi",
+    "login_submit": "Accedi",
+    "login_no_account": "Non hai un account?",
+    "check_email": "Controlla la tua email per confermare l'account.",
+    "invalid_credentials": "Email o password non validi.",
+    "logout_success": "Ci vediamo al prossimo tavolo."
+  },
+  "account": {
+    "heading": "Il mio profilo",
+    "display_name": "Nome visualizzato",
+    "contact_handle": "Come contattarti",
+    "contact_handle_placeholder": "es. Discord: nickname#0001 — oppure un'email dedicata",
+    "contact_handle_hint": "Visibile solo agli utenti registrati. Puoi lasciarlo vuoto e aggiungerlo in seguito.",
+    "bio": "Presentati in breve",
+    "save": "Salva",
+    "saved": "Profilo aggiornato.",
+    "delete_heading": "Elimina account",
+    "delete_description": "L'account e tutti i tuoi annunci saranno cancellati in modo permanente.",
+    "delete_confirm_label": "Scrivi ELIMINA per confermare",
+    "delete_submit": "Elimina definitivamente",
+    "display_name_required": "Imposta un nome visualizzato per pubblicare annunci."
+  },
+  "bacheca": {
+    "heading": "Bacheca annunci",
+    "filter_kind": "Tipo",
+    "filter_city": "Città",
+    "filter_game": "Sistema di gioco",
+    "filter_all": "Tutti",
+    "no_results": "Nessun annuncio corrisponde ai filtri selezionati.",
+    "pagination_prev": "Precedente",
+    "pagination_next": "Successiva",
+    "posted_in": "in",
+    "posted_by": "da",
+    "new_cta": "Pubblica un annuncio",
+    "contact_locked": "Accedi per vedere i contatti.",
+    "contact_label": "Contatto",
+    "contact_missing": "L'autore non ha ancora indicato un contatto.",
+    "delete": "Elimina annuncio",
+    "delete_confirm": "Eliminare questo annuncio?"
+  },
+  "announcement": {
+    "kind": {
+      "looking_for_players": "Cerco giocatori",
+      "looking_for_gm": "Cerco master",
+      "looking_for_group": "Cerco gruppo"
+    },
+    "form": {
+      "heading": "Pubblica un annuncio",
+      "kind": "Cosa cerchi?",
+      "city": "Città",
+      "city_placeholder": "Inizia a scrivere...",
+      "games": "Sistema o sistemi di gioco",
+      "title": "Titolo",
+      "title_placeholder": "Es. Campagna settimanale a Milano",
+      "body": "Descrizione",
+      "body_placeholder": "Frequenza, orari, livello di esperienza, preferenze...",
+      "submit": "Pubblica",
+      "rate_limited": "Hai raggiunto il numero massimo di annunci per oggi.",
+      "display_name_missing": "Imposta prima un nome visualizzato nel tuo profilo.",
+      "validation_error": "Controlla i campi del modulo."
+    }
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "terms": "Termini",
+    "cookies": {
+      "message": "Usiamo solo cookie tecnici essenziali per il funzionamento del sito.",
+      "accept": "Ho capito",
+      "more": "Informativa privacy"
+    }
+  },
+  "common": {
+    "cancel": "Annulla",
+    "back": "Indietro",
+    "loading": "Caricamento...",
+    "required": "obbligatorio",
+    "optional": "facoltativo"
+  },
+  "errors": {
+    "not_found_title": "Pagina non trovata",
+    "not_found_body": "L'indirizzo che hai seguito non esiste o è stato rimosso.",
+    "generic": "Qualcosa è andato storto. Riprova tra un momento."
+  }
+}
