@@ -67,6 +67,35 @@ pnpm --filter @trova-tavolo/web dev
 
 The app runs on <http://localhost:3000>.
 
+## Running with Docker (self-hosting on a VM / Proxmox)
+
+There's a production-ready Dockerfile (Next.js standalone output) and a root
+`docker-compose.yaml`. Supabase is assumed to be hosted on supabase.com.
+
+```bash
+cp .env.example .env
+# Edit .env — paste the URL + anon key + service-role key from your
+# Supabase Cloud project, and set NEXT_PUBLIC_SITE_URL to the host where
+# users will reach the app (e.g. http://192.168.1.42:3000).
+
+docker compose up -d --build
+docker compose logs -f web
+```
+
+Add the same `NEXT_PUBLIC_SITE_URL` + `/auth/callback` to
+**Authentication → URL Configuration** in Supabase, otherwise signup email
+confirmations will fail.
+
+Rebuild after pulling changes:
+
+```bash
+git pull
+docker compose up -d --build
+```
+
+Because `NEXT_PUBLIC_*` values are inlined into the client bundle at build
+time, changing them in `.env` requires `--build`, not just a restart.
+
 ## Scripts
 
 | Command            | What it does                              |

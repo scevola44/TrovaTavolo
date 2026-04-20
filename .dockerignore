@@ -1,0 +1,29 @@
+# Build artifacts and dependencies — always reinstalled inside the image.
+**/node_modules
+**/.next
+**/.turbo
+**/dist
+
+# VCS and editor noise
+.git
+.github
+.vscode
+.idea
+
+# Local env — passed in via compose args, never copied into the image.
+.env
+.env.local
+.env.*.local
+
+# Logs and OS junk
+*.log
+**/*.log
+.DS_Store
+Thumbs.db
+
+# Incremental TS state
+**/*.tsbuildinfo
+
+# Supabase local CLI artifacts
+supabase/.branches
+supabase/.temp
