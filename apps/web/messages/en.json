@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "Trova Tavolo",
+    "tagline": "Find your next tabletop RPG table."
+  },
+  "nav": {
+    "home": "Home",
+    "bacheca": "Board",
+    "new": "New post",
+    "account": "My profile",
+    "login": "Log in",
+    "signup": "Sign up",
+    "logout": "Log out"
+  },
+  "home": {
+    "heading": "Posts for players, GMs, and groups",
+    "subheading": "Looking for players? A GM? A group to join? Post a listing in your city.",
+    "cta_browse": "Browse the board",
+    "cta_post": "Post a listing"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "password_hint": "At least 8 characters.",
+    "signup_heading": "Create an account",
+    "signup_submit": "Sign up",
+    "signup_already": "Already have an account?",
+    "login_heading": "Log in",
+    "login_submit": "Log in",
+    "login_no_account": "No account yet?",
+    "check_email": "Check your email to confirm your account.",
+    "invalid_credentials": "Invalid email or password.",
+    "logout_success": "See you at the next table."
+  },
+  "account": {
+    "heading": "My profile",
+    "display_name": "Display name",
+    "contact_handle": "How to reach you",
+    "contact_handle_placeholder": "e.g. Discord: nickname#0001 — or a dedicated email",
+    "contact_handle_hint": "Visible only to signed-in users. You can leave this empty and add it later.",
+    "bio": "Short bio",
+    "save": "Save",
+    "saved": "Profile updated.",
+    "delete_heading": "Delete account",
+    "delete_description": "Your account and all your listings will be permanently removed.",
+    "delete_confirm_label": "Type DELETE to confirm",
+    "delete_submit": "Delete permanently",
+    "display_name_required": "Set a display name before posting."
+  },
+  "bacheca": {
+    "heading": "Listings board",
+    "filter_kind": "Type",
+    "filter_city": "City",
+    "filter_game": "Game system",
+    "filter_all": "All",
+    "no_results": "No listings match the selected filters.",
+    "pagination_prev": "Previous",
+    "pagination_next": "Next",
+    "posted_in": "in",
+    "posted_by": "by",
+    "new_cta": "Post a listing",
+    "contact_locked": "Log in to see contact info.",
+    "contact_label": "Contact",
+    "contact_missing": "The author hasn't provided a contact yet.",
+    "delete": "Delete listing",
+    "delete_confirm": "Delete this listing?"
+  },
+  "announcement": {
+    "kind": {
+      "looking_for_players": "Looking for players",
+      "looking_for_gm": "Looking for a GM",
+      "looking_for_group": "Looking for a group"
+    },
+    "form": {
+      "heading": "Post a listing",
+      "kind": "What are you looking for?",
+      "city": "City",
+      "city_placeholder": "Start typing...",
+      "games": "Game system(s)",
+      "title": "Title",
+      "title_placeholder": "E.g. Weekly campaign in Milan",
+      "body": "Description",
+      "body_placeholder": "Frequency, schedule, experience level, preferences...",
+      "submit": "Publish",
+      "rate_limited": "You've reached today's posting limit.",
+      "display_name_missing": "Set a display name in your profile first.",
+      "validation_error": "Please review the form fields."
+    }
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "cookies": {
+      "message": "We only use essential technical cookies required to run the site.",
+      "accept": "Got it",
+      "more": "Privacy policy"
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "back": "Back",
+    "loading": "Loading...",
+    "required": "required",
+    "optional": "optional"
+  },
+  "errors": {
+    "not_found_title": "Page not found",
+    "not_found_body": "The link you followed no longer exists.",
+    "generic": "Something went wrong. Please try again in a moment."
+  }
+}
