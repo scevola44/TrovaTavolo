@@ -104,7 +104,23 @@ time, changing them in `.env` requires `--build`, not just a restart.
 | `pnpm build`       | Production build across the workspace     |
 | `pnpm lint`        | ESLint across all packages                |
 | `pnpm typecheck`   | `tsc --noEmit` across all packages        |
+| `pnpm test`        | Vitest across all packages that define tests |
 | `pnpm format`      | Format with Prettier                      |
+
+## Continuous integration
+
+`.github/workflows/ci.yml` runs on every pull request targeting `main` or
+`develop` (and on direct pushes to those branches). It executes, in order:
+
+1. `pnpm lint`
+2. `pnpm typecheck`
+3. `pnpm test`
+4. `pnpm build` (with placeholder `NEXT_PUBLIC_*` env vars)
+
+To actually *block* merges on a red check, enable branch protection on
+GitHub: **Settings → Branches → Add rule** for `main` and `develop`, tick
+**Require status checks to pass before merging**, and pick the
+`Lint, typecheck, test, build` check from the list.
 
 ## Key routes
 
