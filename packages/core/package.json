@@ -13,7 +13,8 @@
     "./types": "./src/types.ts"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "dependencies": {
     "@supabase/ssr": "0.5.2",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@trova-tavolo/config": "workspace:*",
     "@types/node": "22.10.1",
-    "typescript": "5.7.2"
+    "typescript": "5.7.2",
+    "vitest": "2.1.8"
   }
 }
