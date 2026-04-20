@@ -26,9 +26,25 @@ describe('updateProfileSchema', () => {
     expect(result.success).toBe(true);
     if (result.success) expect(result.data.display_name).toBe('Marco');
   });
+
+  it('accepts input with only display_name when optional fields are omitted', () => {
+    expect(updateProfileSchema.safeParse({ display_name: 'Marco' }).success).toBe(true);
+  });
+
+  it('rejects a display_name over the maximum length', () => {
+    expect(
+      updateProfileSchema.safeParse({ display_name: 'a'.repeat(41) }).success,
+    ).toBe(false);
+  });
 });
 
 describe('signupSchema', () => {
+  it('accepts a valid email and password', () => {
+    expect(signupSchema.safeParse({ email: 'user@example.com', password: 'password123' }).success).toBe(
+      true,
+    );
+  });
+
   it('rejects non-email strings', () => {
     expect(signupSchema.safeParse({ email: 'notanemail', password: 'password123' }).success).toBe(
       false,
@@ -38,10 +54,20 @@ describe('signupSchema', () => {
   it('rejects passwords under 8 characters', () => {
     expect(signupSchema.safeParse({ email: 'a@b.co', password: 'short' }).success).toBe(false);
   });
+
+  it('rejects passwords over 72 characters', () => {
+    expect(
+      signupSchema.safeParse({ email: 'a@b.co', password: 'a'.repeat(73) }).success,
+    ).toBe(false);
+  });
 });
 
 describe('loginSchema', () => {
   it('accepts any non-empty password (no length constraint at login)', () => {
     expect(loginSchema.safeParse({ email: 'a@b.co', password: 'x' }).success).toBe(true);
+  });
+
+  it('rejects a non-email string', () => {
+    expect(loginSchema.safeParse({ email: 'notanemail', password: 'x' }).success).toBe(false);
   });
 });
